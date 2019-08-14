@@ -20,14 +20,10 @@ CREATE TABLE [dbo].[Schedule](
   [Id] [int] IDENTITY(1,1) PRIMARY KEY NOT NULL,
   [PatientName] [varchar](255) NOT NULL,
   [PatientBirth] [date] NULL,
-  [Start] [date] NULL,
-  [Finish] [date] NULL,
+  [Start] [datetime] NULL,
+  [Finish] [datetime] NULL,
   [Notes] [nvarchar](max) NULL
 )
-GO
-
--- Script de criação da tabela
-CREATE TABLE [dbo].[Schedule]([Id] [int] IDENTITY(1,1) NOT NULL,[PatientName] [varchar](255) NOT NULL,[PatientBirth] [date] NULL,[Start] [date] NULL,[Finish] [date] NULL,[Notes] [nvarchar](max) NULL)
 GO
 ```
 
